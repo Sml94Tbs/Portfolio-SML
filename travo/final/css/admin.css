@@ -1,0 +1,289 @@
+/* Page d'admin */
+
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-content {
+    background: #4caeff7a;
+    padding: 3rem 10%;
+    width: 150.5rem;
+    height: 74.1rem;
+    border-radius: 4rem;
+}
+
+.admin-content h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.admin-compenent {
+    /* background: #62c24f; */
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 10%;
+}
+
+.admin-compenent a {
+    background: #3093f0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: .9em;
+    border-radius: .8rem;
+    color: #fff;
+    transition: .3s ease;
+    text-align: center;
+}
+
+.admin-compenent a:hover {
+    background: #287dcc;
+    box-shadow: 0px 0px 14px 4px rgba(40, 125, 204, .58);
+    transition: .3s ease;
+}
+
+/* Responsive admin */
+
+@media screen and (max-height: 1368px) {
+    .admin-compenent{
+        padding: 2rem 5%;
+    }
+}
+
+@media screen  and (max-width: 820px) {
+    .admin-content{
+        width: 100%;
+        padding: 3rem 5%;
+    }
+
+    .admin-content h1{
+        font-size: 3rem;
+    }
+
+    .admin-compenent{
+        padding: 2rem;
+    }
+
+    .admin-compenent a{
+        font-size: 1.1rem;
+        /* padding: .5em; */
+    }
+}
+
+@media screen and (max-height:720px) {
+    .admin-content{
+        height: 100%;
+    }
+}   
+
+@media screen and (max-width: 414px) {
+    .admin-content{
+        width: 100%;
+        height: 100%;
+    }
+    .admin-content h1{
+        font-size: 2rem;
+    }
+    .admin-compenent{
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+}
+
+/* Page d'ajout de donnateur */
+
+.add-donateur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donateur-content {
+    background: #287dcce0;
+    width: 60rem;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+}
+
+.donateur-content h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #333;
+}
+
+.donateur-content .add-box {
+    position: relative;
+    width: 100%;
+    margin: 3rem 0;
+    border-bottom: .2rem solid #fff;
+}
+
+.add-box input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    background: transparent;
+}
+
+.add-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.add-box input:focus~label,
+.add-box input:valid~label {
+    top: -.5rem;
+}
+
+.adh {
+    font-size: 1.45rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.adh label input {
+    accent-color: #fff;
+    margin-right: .3rem;
+    margin-bottom: 3rem;
+}
+
+.btn-adh {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border: .2rem solid #fff;
+    font-size: 1.4rem;
+    padding: .5em 0;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.btn-submit {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn-adh:hover {
+    box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, .51);
+    background: #fff;
+    color: #333;
+    transition: .5s;
+}
+
+/* Responsive Ajout des donateur */
+
+@media screen and (max-width: 393px) {
+    .donateur-content h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen  and (max-width: 280px){
+    .donateur-content{
+        padding: 1rem 2rem;
+    }
+
+    .donateur-content h1 {
+        font-size: 2.1rem;
+    }
+    .add-box label{
+        font-size: 1.1rem;
+    }
+    .add-box input{
+        font-size: 1.1rem;
+    }
+
+    .adh{
+        font-size: 1.1rem;
+    }
+    .btn-adh{
+        font-size: 1.1rem;
+    }
+}
+
+/* CSS dses Liste des donations */
+
+.list-dona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dona-content{
+    background: #dffa46;
+}
+
+.dona-content h1{
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+/* CSS des ajout des donations */
+
+.ajout-donation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-dn-content{
+    background: #287dcce0;
+    width: 60rem;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+}
+
+.add-dn-content h1{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.add-dn-content .add-dn{
+    position: relative;
+    width: 100%;
+    margin: 3rem 0;
+    border-bottom: .2rem solid #fff;
+}
+
+.add-dn input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background: transparent;
+    color: #fff;
+}
+
+.add-dn input::placeholder{
+    color: #fff;
+}
+
+.add-dn label {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.add-dn input:focus~label,
+.add-dn input:valid~label {
+    top: -.5rem;
+}

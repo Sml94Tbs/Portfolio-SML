@@ -1,0 +1,1317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS global du site */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    /* background-size: cover; */
+    background: #fff;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+}
+
+/* CSS de la barre pour scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 20px;
+    /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+/* === CSS de la map === */
+
+#map {
+    height: 100%;
+}
+
+/* CSS pour les Cookies */
+
+.cookies {
+    position: fixed;
+    background: #00000052;
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 101;
+}
+
+.cookie-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 80rem;
+    height: 80rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem 1px rgba(0, 0, 0, .2);
+    border: .2rem solid rgba(255, 255, 255, .2);
+    color: #ffffff;
+    padding: 3rem 4rem;
+}
+
+.cookie-layout {
+    align-items: center;
+}
+
+.cookie-layout h2 {
+    color: #333;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.cookie-layout p {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.cookie-choix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.btn-cookie {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: .8em;
+    border-radius: 4rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    border: 2px solid rgb(255, 255, 255, .2);
+    background: #39925b;
+    transition: .5s;
+}
+
+.btn-cookie:hover {
+    background: #84fcb2;
+    /* border: 2px solid #ffffff; */
+    transition: .5s;
+}
+
+/* CSS du header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    z-index: 100;
+}
+
+.logo {
+    height: 70px;
+    width: 65px;
+    pointer-events: none;
+    /*margin-right: 570px;*/
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.7rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: .5s;
+
+    z-index: 1;
+}
+
+.navbar.active {
+    display: block;
+}
+
+
+.btn-connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding: .8em 2em;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background: transparent;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+
+.btn-connexion:hover {
+    background: #333;
+    color: #fff;
+    transition: .3s;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 3.2rem;
+    color: #333;
+}
+
+/* CSS pour l'acceuil du site */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    width: 100%;
+    padding: 7rem 5% 0;
+}
+
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-text h1 {
+    text-align: center;
+    color: #333;
+    font-size: 10rem;
+    margin-bottom: 20px;
+}
+
+.home-text h4 {
+    color: #333;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 35px;
+}
+
+.home-text p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-don {
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 37px;
+    font-size: 20px;
+    color: #333;
+    padding: .6em 1.5em;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.btn-don:hover {
+    color: #fff;
+    background: #333;
+    transition: .5s;
+}
+
+.home-text .btn-don {
+    display: block;
+}
+
+.home-content img {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #4d4d4d;
+    display: flex;
+    overflow: hidden;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-content .btn-don.a {
+    display: none;
+}
+
+
+/* CSS pour le Qui sommes-nous */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: #333;
+}
+
+.about-content {
+    background: #e9ecef;
+    border-radius: 4rem;
+    width: 150.5rem;
+    height: 60.1rem;
+    padding: 2rem 10% 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .about-container {
+    width: 100.32rem;
+    /* background: #4d4d4d; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 3rem 2rem;
+}
+
+.about-text {
+    padding: 2rem 2%;
+}
+
+.about-text p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-img img {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #4d4d4d;
+    overflow: hidden;
+}
+
+/* CSS Nos Actualité */
+
+.actu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actu-content {
+    padding: 2rem 10%;
+    width: 150.5rem;
+    height: 74.1rem;
+    border-radius: 4rem;
+    background: #4caeff7a;
+}
+
+.actu-content h1 {
+    font-size: 3.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.actu-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.actu-img {
+    border-radius: 1rem;
+    height: 50rem;
+    width: 39rem;
+}
+
+.actu-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.actu-text {
+    padding: 1.25rem;
+    width: 40rem;
+    background: #fff;
+}
+
+.actu-text h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.actu-text p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* CSS de Nos Objectifs */
+
+.but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but .but-content {
+    width: 150.5rem;
+    height: 74.1rem;
+    background: #f5463da6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    padding: 2rem 10%;
+}
+
+.but-content h1 {
+    color: #333;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.but-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.but-container .but-box {
+    flex: 1 1 30rem;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    height: 30.4rem;
+    width: 30.4rem;
+    text-align: center;
+    border: .2rem solid rgba(255, 255, 255, .2);
+    background: #ffc;
+    transform: rotate(-6deg);
+    transition: .15s linear;
+}
+
+.but-box h3 {
+    font-size: 1.872rem;
+    color: #000000;
+}
+
+.but-box p {
+    color: #000000;
+    font-size: 1.6rem;
+}
+
+.but-container .but-box:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transform: scale(1.02);
+}
+
+/* Les partenaires */
+
+.feat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feat-content {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10% 0;
+}
+
+.feat-content h1 {
+    text-align: center;
+    color: #333;
+    font-size: 3.2rem;
+}
+
+.feat-content p {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* CSS Nos Action */
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-content {
+    width: 100%;
+    /* background: #333; */
+    padding: 4rem 15% 0;
+}
+
+.action-content h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.action-content i {
+    background: #fff;
+    font-size: 3rem;
+    padding: .6em;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.action-content i:first-child {
+    left: -2.3rem;
+}
+
+.action-content i:last-child {
+    left: -2.3rem;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 2rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.card {
+    /* background: #ebe18d; */
+    /* border: 1px solid #333; */
+    padding: .6rem;
+    /* width: auto; */
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.card-box {
+    position: relative;
+    width: 40rem;
+    height: 30.8rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #4d4d4d;
+    overflow: hidden;
+    display: flex;
+}
+
+.card-box img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.card-box:hover img {
+    transform: scale(1.1);
+}
+
+.card-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #5ac46c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.card-box:hover .card-layer {
+    transform: translateY(0%);
+}
+
+.card-layer h4 {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.card-layer p {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.card-layer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: .5em .9em;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    letter-spacing: .1rem;
+    transition: .5s;
+}
+
+.card-layer a:hover {
+    background: white;
+    color: #333;
+    transition: .5s;
+}
+
+/* CSS Contact */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-content {
+    top: 0;
+    width: 100.31rem;
+    /* background: #4d4d4d; */
+}
+
+.contact-text {
+
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.contact-re {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contact {
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 40px;
+    font-size: 17px;
+    padding: .8em 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS Don */
+
+.don {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.don h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.don-content {
+    width: 150.5rem;
+    height: 74.1rem;
+    padding: 2rem 10%;
+    background: #81b973b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4rem;
+}
+
+.don-text p {
+    color: #333;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.don-text.a{
+    margin-top: 2rem;
+}
+
+.don-text.a p a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.don-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS pour le footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2fd;
+}
+
+.footer-content {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 2rem 2rem;
+}
+
+.footer-content .footer-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-layer .footer-reseau {
+    display: flex;
+}
+
+.footer-layer .footer-reseau a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #007bff;
+    padding: .8rem;
+    border-radius: .8rem;
+    margin-left: 10px;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.footer-reseau a i {
+    color: #007bff;
+    font-size: 2.4rem;
+}
+
+.footer-layer .footer-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #fff;
+    border-radius: .8rem;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.footer-layer .footer-icon a:hover {
+    box-shadow: 0 0 1rem #fff;
+}
+
+.footer-icon a i {
+    font-size: 2.4rem;
+    color: rgb(66, 120, 236);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #333;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* La page de connexion */
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warp {
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #333;
+    width: 420px;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.warp h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.warp .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #333;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.warp .retour {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14.5px;
+    text-decoration: none;
+    margin: 20px 0 15px;
+}
+
+.retour a {
+    color: #333;
+    text-decoration: none;
+}
+
+.warp .btn {
+    width: 100%;
+    height: 45px;
+    background: #333;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 1rem #fff;
+}
+
+/* CSS du Formulaire */
+
+.header.contact {
+    position: fixed;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warpper {
+    position: relative;
+    background: transparent;
+    color: #333;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    width: 100rem;
+    height: auto;
+    padding: 3rem 8rem;
+}
+
+.warpper h1 {
+    color: #333;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.warpper h4 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+.warpper .input-text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5rem;
+    margin: 3rem 0;
+}
+
+.input-text.oui {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    height: 100%;
+}
+
+.input-text input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    color: #333;
+    padding: 2rem 4.5rem 2rem 2rem;
+}
+
+textarea {
+    position: relative;
+    color: #333;
+    width: 100%;
+    resize: vertical;
+    padding: 1.2rem 2rem;
+    border: 2px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 2rem;
+    background: transparent;
+}
+
+.input-text input::placeholder,
+textarea::placeholder {
+    color: #333;
+    font-weight: 500;
+    margin: -1.5rem 0 1.5rem;
+}
+
+.warpper .adherant {
+    position: relative;
+    display: flex;
+    padding: 1.3rem;
+    font-size: 1.45rem;
+}
+
+.adherant label input {
+    margin-right: .9rem;
+}
+
+.contact-text {
+    position: relative;
+}
+
+.contact-text p {
+    padding: 1.5rem;
+}
+
+.warpper .btn-submit {
+    position: relative;
+    font-size: 1.6rem;
+    padding: .9em 1.8em;
+    background: transparent;
+    border-radius: 4rem;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: .5s;
+}
+
+.warpper .btn-submit:hover {
+    background: #333;
+    color: #fff;
+}
+
+.warpper .btn-retour {
+    font-size: 1.6rem;
+    padding: .9em 1.8em;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 4rem;
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.warpper .btn-retour:hover {
+    background: #cc5353;
+    color: white;
+    border: 2px solid #cc5353;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1800px) {
+    html {
+        font-size: 45.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cookie-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cookie-layout h2 {
+        font-size: 1.9rem;
+    }
+
+    .cookie-layout p {
+        font-size: 1.1rem;
+    }
+
+    .btn-cookie {
+        font-size: 1.1rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        background: #fff;
+        border-bottom-left-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+    }
+
+    .navbar li a {
+        font-size: 1.4rem;
+    }
+
+    .btn-connexion {
+        display: none;
+    }
+
+    .navbar li {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 2rem 3% 2rem;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .home-text .btn-don {
+        display: none;
+    }
+
+    .home-text p {
+        margin-bottom: 1rem;
+    }
+
+    .home-content .btn-don.a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-img {
+        width: 100%;
+    }
+
+    .home-content img {
+        width: 100%;
+    }
+
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        padding: 2rem 2% 0;
+        width: 100%;
+    }
+
+    .about .about-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .actu-content {
+        padding: 1.5rem 5%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .actu-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .actu-container {
+        flex-direction: column;
+    }
+
+    .actu-img {
+        width: 100%;
+    }
+
+    .actu-text {
+        width: 100%;
+    }
+
+    .but .but-content {
+        padding: 1rem 6% 2rem;
+        height: 100%;
+    }
+
+    .but-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .but-container .but-box {
+        padding: 1rem;
+        height: 15rem;
+    }
+
+    .but-box p {
+        font-size: 1.3rem;
+    }
+
+    .feat-content {
+        padding: 5rem 4% 5rem;
+    }
+
+    .feat-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .action-content {
+        padding: 4rem 2% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .action-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card-layer a {
+        font-size: .7rem;
+        padding: .5em 1em;
+    }
+
+    .card-box{
+        width: 15.7484rem;
+        height: 11.8281rem;
+    }
+
+    .card-box:hover .card-layer {
+        transform: translateY(0.9%);
+    }
+
+    .footer {
+        padding: 1rem 1rem 0;
+        width: 100%;
+    }
+
+    .footer-content {
+        padding: 1rem 1rem 0;
+    }
+
+    .footer-layer {
+        margin-bottom: 2rem;
+    }
+
+    .footer-layer .footer-reseau a {
+        border: .2rem solid #007bff;
+    }
+
+
+    .footer-reseau a i {
+        font-size: 1.3rem;
+    }
+
+    .footer-icon a i {
+        font-size: 1.3rem;
+    }
+
+    .footer-text {
+        position: relative;
+        font-size: 1.1rem;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .warp {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .home-text h1 {
+        font-size: 5rem;
+    }
+
+    .btn-don.a {
+        font-size: 1.4rem;
+    }
+
+    .about-container {
+        position: relative;
+    }
+
+    .warpper {
+        width: 100%;
+        padding: 1rem 5%;
+    }
+
+    .warpper h1 {
+        font-size: 2.5rem;
+    }
+
+    .warpper h4 {
+        font-size: 1.1rem;
+    }
+
+    .warpper .input-text {
+        margin: 1rem 0;
+    }
+
+    .adherant p {
+        font-size: 1.2rem;
+    }
+
+    .contact-text p {
+        font-size: 1.2rem;
+    }
+
+    .warpper .btn-submit {
+        font-size: 1.1rem;
+    }
+
+    .don-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .don-content h1 {
+        font-size: 2rem;
+    }
+
+    .don-text p {
+        font-size: 1.2rem;
+    }
+
+    .btn-don {
+        font-size: 1.4rem;
+    }
+}

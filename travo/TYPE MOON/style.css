@@ -1,0 +1,48 @@
+body {
+    background-color: #425c9e;
+}
+
+#carousel {
+    width: 800px;
+    height: 800px;
+}
+
+#type-moon {
+    width: 50px;
+    height: 40px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#icon {
+    image-resolution: auto;
+}
+
+#type {
+    width: 50px;
+    height: 40px;
+    image-resolution: center;
+}
+
+#ico {
+    width: 250px;
+}
+
+footer .backend {
+    background-color: #1a1a1a;
+    color: #FFF;
+    padding: 25px 100px;
+}
+
+footer .end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .row {
+    image-rendering: auto;
+}

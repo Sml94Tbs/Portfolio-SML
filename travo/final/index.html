@@ -1,0 +1,316 @@
+<!-- <?php
+// session_start();
+// if (isset($_POST['submit'])){
+//     extract($_POST);
+//     if(!empty($subject) and !empty($name) and !empty($tel) and !empty($mail) and !empty($msg)){
+//         $to = "ronnymayamba94@hotmail.com";
+//         $from = $mail;
+//         $header = "From:\"$name\"<$from>\n";
+//         $header .= "Reply-To:\"$from\n";
+//         $header .= "Content-Type: text/html; charset=\iso-8859-1\"";
+//         if (mail($to, $subject, $msg, $header)){
+//             echo "Votre message a bien été envoyer";
+//         } else{
+//             echo "Une erreur c'est produit, veuillez recommencer";
+//         }
+//     }
+// }
+?> -->
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/logo1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECEFRAM !</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Modal Cookies -->
+    <!-- <?php
+    if (!isset($_COOKIE['user'])){
+        // include('../final/include/cookies-modal.php');
+    }
+    ?> -->
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html#home"><img src='images/logo1.jpg' alt="ECEFRAM Logotype" class="logo" /></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#about" class="active">Qui sommes-nous</a></li>
+                <li><a href="index.html#actu">Nos Actualité</a></li>
+                <li><a href="index.html#but">Nos Objectifs</a></li>
+                <li><a href="index.html#feat">Nos Partenaires</a></li>
+                <li><a href="index.html#action">Nos Actions</a></li>
+                <li><a href="index.html#contact">Conctatez-nous</a></li>
+                <li><a href="index.html#don">Faites un don</a></li>
+            </ul>
+        </nav>
+        <a href="connexion.html" class="btn-connexion">Connextion</a>
+    </header>
+    <!-- L' acceuil -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1 class="home-title">ECEFRAM</h1>
+                <h4>Echanges Educatifs France-Maghreb</h4>
+                <p>Bienvenue sur le site de Ecefram</p>
+                <a href="https://www.helloasso.com/associations/ecefram/formulaires/1" class="btn-don">Faites un
+                    don</a>
+            </div>
+            <div class="home-img">
+                <img src="images/mostaganem8.jpg" alt="acceuil" />
+            </div>
+            <a href="https://www.helloasso.com/associations/ecefram/formulaires/1" class="btn-don a">Faites un
+                don</a>
+        </div>
+    </section>
+    <!-- A propos -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>Qui sommes-nous</h1>
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="images/Membre_Ecefram.jpg" alt="Photo de presentation" />
+                </div>
+                <div class="about-text">
+                    <p>
+                        Un groupe d’amis résidents en France et au Maghreb, conscients que
+                        nos pays ont besoin de toutes les bonnes volontés pour participer
+                        à leur construction. Le domaine éducatif, et plus particulièrement
+                        à destination des plus jeunes, a été ciblé. Nous avons constitué
+                        une association loi 1901 sous le nom de l’ECEFRAM, Echanges et
+                        Coopération Educatifs France-Maghreb. L’association a été agréée
+                        le 17 juin 2003 sous le N° 094201743.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Les actualité -->
+    <section class="actu" id="actu">
+        <div class="actu-content">
+            <h1>Notre Actualité</h1>
+            <div class="actu-container">
+                <div class="actu-img">
+                    <img src="images/Soiree24Juin.png" alt="" />
+                </div>
+                <div class="actu-text">
+                    <h4>Trousseaux Scolaires pour tous - Campagne 2023 - 2024</h4>
+                    <p class="ok">Bonjour à tous,</p>
+                    <p>
+                        L'association ECEFRAM a l'immense plaisir de vous inviter à sa
+                        soirée musicale pour la collecte de fonds destinés à financer 2000
+                        trousseaux scolaires pour nos enfants necessiteux en Algérie.
+                    </p>
+                    <p>
+                        Vous pouvez directement réserver avec le lien sécurisé ci-dessous
+                        :
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Les Objectifs -->
+    <section class="but" id="but">
+        <div class="but-content">
+            <h1>Nos Objectifs</h1>
+            <div class="but-container">
+                <div class="but-box">
+                    <h3>#1</h3>
+                    <p>
+                        Distribuer des trousseaux scolaires aux enfants, en respectant
+                        l'égalité filles-garçons, afin de favoriser leur réussite
+                    </p>
+                </div>
+                <div class="but-box">
+                    <h3>#2</h3>
+                    <p>
+                        Elaborer une stratégie de coopération entre enseignants :
+                        réflexion et échanges sur les méthodes d’enseignement,
+                        l’exploitation du matériel pédagogique et tout autre projet
+                        éducatif
+                    </p>
+                </div>
+                <div class="but-box">
+                    <h3>#3</h3>
+                    <p>
+                        Favoriser les liens entre les acteurs des milieux éducatifs et
+                        culturels Français et Maghrébins
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Les Partenaires -->
+    <section class="feat" id="feat">
+        <div class="feat-content">
+            <h1>Nos Partenaires</h1>
+            <!-- <p>blablablabalblabalablablablablabaalbalbalaaba</p> -->
+            <div id="map" style="width:100%; height:70vh;">
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHxz74qwfZFjQ9bq8AjF1FNMQ8UPLF7gk&callback=initMap&v=weekly"
+                    defer></script>
+            </div>
+        </div>
+    </section>
+    <!-- Les action -->
+    <section class="action" id="action">
+        <div class="action-content">
+            <h1>Nos Actions</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-box">
+                        <img src="images/mostaganem8.jpg" alt="" />
+                        <div class="card-layer">
+                            <h4>Bonjour</h4>
+                            <p>Test</p>
+                            <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="images/8.jpg" alt="" />
+                        <div class="card-layer">
+                            <h4>Bonjour</h4>
+                            <p>Test</p>
+                            <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="images/eloued2019-3.jpg" alt="" />
+                        <div class="card-layer">
+                            <h4>Bonjour</h4>
+                            <p>Test</p>
+                            <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="images/mostaganem8.jpg" alt="" />
+                        <div class="card-layer">
+                            <h4>Bonjour</h4>
+                            <p>Test</p>
+                            <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="images/mostaganem8.jpg" alt="" />
+                        <div class="card-layer">
+                            <h4>Bonjour</h4>
+                            <p>Test</p>
+                            <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="images/mostaganem8.jpg" alt="" />
+                        <div class="card-layer">
+                            <h4>Bonjour</h4>
+                            <p>Test</p>
+                            <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Les contactes -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <section class="formulaire">
+    <div class="warpper">
+        <form method="POST" action="#">
+            <h1>Conctatez-nous</h1>
+            <h4>
+                Veuillez remplir ce formulaire pour prendre contact avec Ecefram
+            </h4>
+            <div class="input-text oui">
+                <input type="text" placeholder="Votre Nom" name="name" required />
+                <input type="number" placeholder="Votre Téléphone" name="tel" required />
+            </div>
+            <div class="input-text">
+                <input type="text" placeholder="Email" name="mail" required />
+            </div>
+            <div class="input-text">
+                <input type="text" placeholder="Objet" name="subject" required />
+            </div>
+            <div class="area">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre Meessage" name="msg" required></textarea>
+            </div>
+            <div class="adherant">
+                <label><input type="checkbox" /></label>
+                <p>Voulez-vous devenir adhérent à ECEFRAM ?</p>
+            </div>
+            <div class="contact-text">
+                <p>
+                    Ce formulaire permet simplement de nous envoyer votre
+                    commentaire par le biais d'un mail. Ainsi nous vous
+                    réponderons dans les plus bref délais par mail ou par SMS.
+                </p>
+                <p>
+                    Si vous ne souhaitez pas devenir adhérent à ECEFRAM, aucune
+                    donnée personnelle ne sera enregistrée.
+                </p>
+            </div>
+            <div class="choix">
+                <button type="submit" class="btn-submit">Envoyez</button>
+                <!-- <a href="index.html" class="btn-retour">Retour</a> -->
+            </div>
+        </form>
+    </div>
+</section>
+        </div>
+    </section>
+    <!-- Les don -->
+    <section class="don" id="don">
+        <div class="don-content">
+            <h1>Voulez-vous fairer un don ?</h1>
+            <div class="don-text">
+                <p>
+                    Pour assurer nos objectifs, comme chaque année, nous avons besoin de
+                    vous : Vous pouvez faire vos dons en ligne directement. Vous pouvez
+                    verser à Ecefram le montant que vous souhaitez (20€ sont nécessaires
+                    pour équiper un enfant pendant toute une année scolaire). Ces dons
+                    vont nous permettre de distribuer les trousseaux nécessaires aux
+                    enfants démunis.
+                </p>
+            </div>
+            <div class="don-btn">
+                <a href="https://www.helloasso.com/associations/ecefram/formulaires/1" class="btn-don">Faites un
+                    don</a>
+            </div>
+            <div class="don-text a">
+                <p>
+                    Site <a href="https://www.helloasso.com">HelloAsso</a> sécurisé. Vous pouvez aussi soutenir
+                    HelloAsso par une petite
+                    contribution ou
+                    faire
+                    modifier et cocher " Je ne souhaite pas soutenir HelloAsso" </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-layer">
+                <div class="footer-reseau">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                </div>
+                <div class="footer-icon">
+                    <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+                </div>
+            </div>
+            <div class="footer-text">
+                <a href="#">Paramètre des cookies</a>
+                <p>Copyright @ ecefram | All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/map.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

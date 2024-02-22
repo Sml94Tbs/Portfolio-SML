@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SML</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--------------------------------------Le header--------------------------------------->
+    <header class="header">
+        <a href="#home" class="logo">SML PORTFOLIO</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="act" style="--i:1">Acceuil</a>
+            <a href="#about" style="--i:2">A propos</a>
+            <a href="#skill" style="--i:3">Compétence</a>
+            <a href="#portfolio" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <!-------------------------------------Les menus--------------------------------------->
+    <!--L'acceuil-->
+    <section class="acceuil" id="home">
+        <div class="acceuil-contenu">
+            <h3>
+                Bonjour ici
+            </h3>
+            <h1>
+                Samuel
+            </h1>
+            <h3>
+                Je suis <span class="multiple-text"></span>
+            </h3>
+            <p>
+                Mon site pourra vous indiqué qui je suis
+            </p>
+            <div class="reseau-sociaux">
+                <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/Sml94Tbs"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/samuel-mayamba-85202a271/"><i
+                        class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <a href="media/Samuel_Mayamba_CV.pdf" download="Samuel_Mayamba_CV" class="btn">Télécharger mon cv</a>
+        </div>
+    </section>
+
+    <!--A propos-->
+    <section class="about" id="about">
+        <div class="about-contenu">
+            <h2 class="heading">A propos de <span>Moi</span></h2>
+            <h3>Samuel Mayamba</h3>
+            <p>je suis âgé de 18 ans, actuellement étudiant en 2e de BTS SIO option SLAM au Lycée polyvalent de Cachan.
+            </p>
+    </section>
+    <!--Les compétences-->
+    <section class="skill" id="skill">
+        <h2 class="heading">
+            Mes compétence
+        </h2>
+        <p>Vous pourrez vous faire une idée de mon niveau actuel.</p>
+        <div class="card-container">
+            <div class="card-box">
+                <i class='bx bxl-java'></i>
+                <h3>Java</h3>
+                <p>30%</p>
+            </div>
+
+            <div class="card-box">
+                <i class='bx bxl-python'></i>
+                <h3>Python</h3>
+                <p>40%</p>
+            </div>
+
+            <div class="card-box">
+                <i class='bx bxl-html5'></i>
+                <h3>Html</h3>
+                <p>60%</p>
+            </div>
+
+            <div class="card-box">
+                <i class='bx bxl-css3'></i>
+                <h3>CSS</h3>
+                <p>50%</p>
+            </div>
+
+            <div class="card-box">
+                <i class='bx bxl-php'></i>
+                <h3>PHP</h3>
+                <p>40%</p>
+            </div>
+
+            <div class="card-box">
+                <i class='bx bxs-data'></i>
+                <h3>SQL</h3>
+                <p>30%</p>
+            </div>
+
+            <div class="card-box">
+                <i class='bx bxl-bootstrap'></i>
+                <h3>Bootstrap</h3>
+                <p>100%</p>
+            </div>
+            <div class="card-box">
+                <i class='bx bxl-javascript'></i>
+                <h3dds>JavaScript</h3>
+                <p>20%</p>
+            </div>
+        </div>
+    </section>
+    <!--Mon portfolio avec tout mes devoirs-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mon Portfolio</h2>
+        <h4>Sur cette section vous pourrez retrouver mes travaux</h4>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="media/veille-renpy.jpg" alt="Images">
+                <div class="portfolio-layer">
+                    <h4>Ma veille technologique</h4>
+                    <p>En savoir plus</p>
+                    <a href="veille.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="media/stage-image.jpg" alt="Images">
+                <div class="portfolio-layer">
+                    <h4>Mon Stage</h4>
+                    <p>En savoir plus</p>
+                    <a href="stage.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="media/93715-Tsukihime.jpg" alt="Images">
+                <div class="portfolio-layer">
+                    <h4>Mes Project</h4>
+                    <p>En savoir plus</p>
+                    <a href="travo.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Mes contact-->
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Contact
+        </h2>
+        <form action="#">
+            <div class="input-text">
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-text">
+                <input type="number" placeholder="Vore numéro">
+                <input type="text" placeholder="L'objet du mail">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+            <input type="submit" value="Envoyer votre message" class="btn">
+        </form>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>
+                @COPYRIGHT SML | All Right Reserved.
+            </p>
+        </div>
+        <div class="footer-icon">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
